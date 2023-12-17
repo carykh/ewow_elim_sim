@@ -16,7 +16,7 @@ for sim in range(SIMS):
         survivors = getSurvivors(lives)
         LS = len(survivors)
         lose_count = round(LS*0.49)
-        win_count = round(LS//20)
+        win_count = round(LS*0.05)
 
         eventful = np.random.choice(LS, size=lose_count+win_count, replace=False)
         for e in range(len(eventful)):
